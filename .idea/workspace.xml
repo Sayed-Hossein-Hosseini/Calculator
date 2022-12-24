@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f1b3e82-b100-41fe-b8ce-ba7115ba7a38" name="Changes" comment="Completing the methods related to clicking on keys 0 to 2 of the calculator">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4f1b3e82-b100-41fe-b8ce-ba7115ba7a38" name="Changes" comment="Completing the methods related to clicking on keys 3 to 6 of the calculator">
       <change beforePath="$PROJECT_DIR$/src/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671828244038</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Completing the methods related to clicking on keys 0 to 2 of the calculator">
+      <created>1671877931377</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671877931377</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Completing the methods related to clicking on keys 3 to 6 of the calculator">
+      <created>1671878100947</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671878100947</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +130,7 @@
     <MESSAGE value="The basic design of the calculator and adding methods related to mouse clicks on each of the keys" />
     <MESSAGE value="Creating an object from the graphics page in the main class" />
     <MESSAGE value="Completing the methods related to clicking on keys 0 to 2 of the calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completing the methods related to clicking on keys 0 to 2 of the calculator" />
+    <MESSAGE value="Completing the methods related to clicking on keys 3 to 6 of the calculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completing the methods related to clicking on keys 3 to 6 of the calculator" />
   </component>
 </project>

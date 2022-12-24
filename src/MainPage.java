@@ -484,11 +484,72 @@ public class MainPage extends javax.swing.JFrame {
         }
     }
 
-    private void key_7MouseClicked(java.awt.event.MouseEvent evt) {}
+    private void key_7MouseClicked(java.awt.event.MouseEvent evt) {
 
-    private void key_8MouseClicked(java.awt.event.MouseEvent evt) {}
+        if (list.size() == 1 && isFirst == false){
+            list.remove();
+            TextField.setText("7");
+            list.add("7");
+            isFirst = true;
+        }else {
+            if (TextField.getText() == "0") {
+                TextField.setText("7");
 
-    private void key_9MouseClicked(java.awt.event.MouseEvent evt) {}
+            } else if (list.getLast() == ")") {
+                TextField.setText(TextField.getText() + "*7");
+                list.add("*");
+
+            } else {
+                TextField.setText(TextField.getText() + "7");
+            }
+            list.add("7");
+        }
+    }
+
+    private void key_8MouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (list.size() == 1 && isFirst == false){
+            list.remove();
+            TextField.setText("8");
+            list.add("8");
+            isFirst = true;
+        }else {
+            if (TextField.getText() == "0") {
+                TextField.setText("8");
+
+            } else if (list.getLast() == ")") {
+                TextField.setText(TextField.getText() + "*8");
+                list.add("*");
+
+            } else {
+                TextField.setText(TextField.getText() + "8");
+            }
+            list.add("8");
+        }
+    }
+
+    private void key_9MouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (list.size() == 1 && isFirst == false){
+            list.remove();
+            TextField.setText("9");
+            list.add("9");
+            isFirst = true;
+        }else {
+            if (TextField.getText() == "0") {
+                TextField.setText("9");
+
+            } else if (list.getLast() == ")") {
+                TextField.setText(TextField.getText() + "*9");
+                list.add("*");
+
+            } else {
+                list.add("9");
+                TextField.setText(TextField.getText() + "9");
+            }
+            list.add("9");
+        }
+    }
 
     private void key_ACMouseClicked(java.awt.event.MouseEvent evt) {}
 

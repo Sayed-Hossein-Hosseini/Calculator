@@ -555,17 +555,127 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_equalMouseClicked(java.awt.event.MouseEvent evt) {}
 
-    private void key_sumMouseClicked(java.awt.event.MouseEvent evt) {}
+    private void key_sumMouseClicked(java.awt.event.MouseEvent evt) {
 
-    private void key_subMouseClicked(java.awt.event.MouseEvent evt) {}
+        if (TextField.getText() == "0") {
+            TextField.setText("Invalid format used!");
 
-    private void key_parenthesisMouseClicked(java.awt.event.MouseEvent evt) {}
+        } else if (list.getLast() == "+" || list.getLast() == "*" ||
+                list.getLast() == "/" || list.getLast() == "(" ||
+                list.getLast() == "-" || list.getLast() == "^") {
+            list.removeLast();
+            String text = TextField.getText();
+            text = text.substring(0, (text.length() - 1));
+            TextField.setText(text + "+");
+            list.add("+");
 
-    private void key_powMouseClicked(java.awt.event.MouseEvent evt) {}
+        } else {
+            list.add("+");
+            TextField.setText(TextField.getText() + "+");
+        }
+    }
 
-    private void key_multMouseClicked(java.awt.event.MouseEvent evt) {}
+    private void key_subMouseClicked(java.awt.event.MouseEvent evt) {
 
-    private void key_divMouseClicked(java.awt.event.MouseEvent evt) {}
+        if (TextField.getText() == "0") {
+            TextField.setText("Invalid format used!");
+        } else if (list.getLast() == "+" || list.getLast() == "*" ||
+                list.getLast() == "/" || list.getLast() == "(" ||
+                list.getLast() == "-" || list.getLast() == "^") {
+            list.removeLast();
+            String text = TextField.getText();
+            text = text.substring(0, (text.length() - 1));
+            TextField.setText(text + "-");
+            list.add("-");
+
+        } else {
+            list.add("-");
+            TextField.setText(TextField.getText() + "-");
+        }
+    }
+
+    private void key_parenthesisMouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (TextField.getText() == "0") {
+            TextField.setText("(");
+            list.add("(");
+
+        } else if (list.getLast() == "(" || list.getLast() == "+"
+                || list.getLast() == "-" || list.getLast() == "*"
+                || list.getLast() == "/" || list.getLast() == "^") {
+
+            TextField.setText(TextField.getText() + "(");
+            list.add("(");
+
+        } else if (parenthesesChecker(list) == 0) {
+            TextField.setText(TextField.getText() + "*(");
+            list.add("*");
+            list.add("(");
+
+        } else if (parenthesesChecker(list) > 0) {
+            TextField.setText(TextField.getText() + ")");
+            list.add(")");
+
+        }
+    }
+
+    private void key_powMouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (TextField.getText() == "0") {
+            TextField.setText("Invalid format used!");
+        } else if (list.getLast() == "+" || list.getLast() == "*" ||
+                list.getLast() == "/" || list.getLast() == "(" ||
+                list.getLast() == "-" || list.getLast() == "^") {
+            list.removeLast();
+            String text = TextField.getText();
+            text = text.substring(0, (text.length() - 1));
+            TextField.setText(text + "^");
+            list.add("^");
+
+        } else {
+            list.add("^");
+            TextField.setText(TextField.getText() + "^");
+        }
+    }
+
+    private void key_multMouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (TextField.getText() == "0") {
+            TextField.setText("Invalid format used!");
+        } else if (list.getLast() == "+" || list.getLast() == "*" ||
+                list.getLast() == "/" || list.getLast() == "(" ||
+                list.getLast() == "-" || list.getLast() == "^") {
+            list.removeLast();
+            String text = TextField.getText();
+            text = text.substring(0, (text.length() - 1));
+            TextField.setText(text + "*");
+            list.add("*");
+
+        } else {
+            list.add("*");
+            TextField.setText(TextField.getText() + "*");
+        }
+    }
+
+    private void key_divMouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (TextField.getText() == "0") {
+            TextField.setText("Invalid format used!");
+
+        } else if (list.getLast() == "+" || list.getLast() == "*" ||
+                list.getLast() == "/" || list.getLast() == "(" ||
+                list.getLast() == "-" || list.getLast() == "^") {
+            list.removeLast();
+            String text = TextField.getText();
+            text = text.substring(0, (text.length() - 1));
+            TextField.setText(text + "/");
+            list.add("/");
+
+        } else {
+            list.add("/");
+            TextField.setText(TextField.getText() + "/");
+        }
+    }
 
     private void key_deleteMouseClicked(java.awt.event.MouseEvent evt) {}
 

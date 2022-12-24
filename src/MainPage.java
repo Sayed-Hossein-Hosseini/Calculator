@@ -334,11 +334,67 @@ public class MainPage extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }
-    private void key_0MouseClicked(java.awt.event.MouseEvent evt) {}
+    private void key_0MouseClicked(java.awt.event.MouseEvent evt) {
 
-    private void key_1MouseClicked(java.awt.event.MouseEvent evt) {}
+        if (list.size() == 1 && isFirst == false){
+            list.remove();
+            TextField.setText("0");
+            isFirst = true;
+        }else {
+            if (TextField.getText() == "0") {
+                TextField.setText("0");
+            } else if (list.getLast() == "/" || list.getLast() == ")") {
+                TextField.setText("Invalid format used!");
+            } else {
+                TextField.setText(TextField.getText() + "0");
+                list.add("0");
+            }
+        }
+    }
 
-    private void key_2MouseClicked(java.awt.event.MouseEvent evt) {}
+    private void key_1MouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (list.size() == 1 && isFirst == false){
+            list.remove();
+            TextField.setText("1");
+            list.add("1");
+            isFirst = true;
+        }else {
+            if (TextField.getText() == "0") {
+                TextField.setText("1");
+
+            } else if (list.getLast() == ")") {
+                TextField.setText(TextField.getText() + "*1");
+                list.add("*");
+
+            } else {
+                TextField.setText(TextField.getText() + "1");
+            }
+            list.add("1");
+        }
+    }
+
+    private void key_2MouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (list.size() == 1 && isFirst == false){
+            list.remove();
+            TextField.setText("2");
+            list.add("2");
+            isFirst = true;
+        }else {
+            if (TextField.getText() == "0") {
+                TextField.setText("2");
+
+            } else if (list.getLast() == ")") {
+                TextField.setText(TextField.getText() + "*2");
+                list.add("*");
+
+            } else {
+                TextField.setText(TextField.getText() + "2");
+            }
+            list.add("2");
+        }
+    }
 
     private void key_3MouseClicked(java.awt.event.MouseEvent evt) {}
 

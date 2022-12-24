@@ -396,13 +396,93 @@ public class MainPage extends javax.swing.JFrame {
         }
     }
 
-    private void key_3MouseClicked(java.awt.event.MouseEvent evt) {}
+    private void key_3MouseClicked(java.awt.event.MouseEvent evt) {
 
-    private void key_4MouseClicked(java.awt.event.MouseEvent evt) {}
+        if (list.size() == 1 && isFirst == false){
+            list.remove();
+            TextField.setText("3");
+            list.add("3");
+            isFirst = true;
+        }else {
+            if (TextField.getText() == "0") {
+                TextField.setText("3");
 
-    private void key_5MouseClicked(java.awt.event.MouseEvent evt) {}
+            } else if (list.getLast() == ")") {
+                TextField.setText(TextField.getText() + "*3");
+                list.add("*");
 
-    private void key_6MouseClicked(java.awt.event.MouseEvent evt) {}
+            } else {
+                TextField.setText(TextField.getText() + "3");
+            }
+            list.add("3");
+        }
+    }
+
+    private void key_4MouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (list.size() == 1 && isFirst == false){
+            list.remove();
+            TextField.setText("4");
+            list.add("4");
+            isFirst = true;
+        }else {
+            if (TextField.getText() == "0") {
+                TextField.setText("4");
+
+            } else if (list.getLast() == ")") {
+                TextField.setText(TextField.getText() + "*4");
+                list.add("*");
+
+            } else {
+                TextField.setText(TextField.getText() + "4");
+            }
+            list.add("4");
+        }
+    }
+
+    private void key_5MouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (list.size() == 1 && isFirst == false){
+            list.remove();
+            TextField.setText("5");
+            list.add("5");
+            isFirst = true;
+        }else {
+            if (TextField.getText() == "0") {
+                TextField.setText("5");
+
+            } else if (list.getLast() == ")") {
+                TextField.setText(list.getLast() + "*5");
+                list.add("*");
+
+            } else {
+                TextField.setText(TextField.getText() + "5");
+            }
+            list.add("5");
+        }
+    }
+
+    private void key_6MouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (list.size() == 1 && isFirst == false){
+            list.remove();
+            TextField.setText("6");
+            list.add("6");
+            isFirst = true;
+        }else {
+            if (TextField.getText() == "0") {
+                TextField.setText("6");
+
+            } else if (list.getLast() == ")") {
+                TextField.setText(TextField.getText() + "*6");
+                list.add("*");
+
+            } else {
+                TextField.setText(TextField.getText() + "6");
+            }
+            list.add("6");
+        }
+    }
 
     private void key_7MouseClicked(java.awt.event.MouseEvent evt) {}
 

@@ -551,7 +551,14 @@ public class MainPage extends javax.swing.JFrame {
         }
     }
 
-    private void key_ACMouseClicked(java.awt.event.MouseEvent evt) {}
+    private void key_ACMouseClicked(java.awt.event.MouseEvent evt) {
+
+        while (!list.isEmpty())
+            list.remove();
+        TextField.setText("0");
+        isFirst = true;
+
+    }
 
     private void key_equalMouseClicked(java.awt.event.MouseEvent evt) {}
 
@@ -677,7 +684,21 @@ public class MainPage extends javax.swing.JFrame {
         }
     }
 
-    private void key_deleteMouseClicked(java.awt.event.MouseEvent evt) {}
+    private void key_deleteMouseClicked(java.awt.event.MouseEvent evt) {
+
+        if (TextField.getText() == "0" || list.isEmpty()) {
+            TextField.setText("0");
+        } else {
+            list.removeLast();
+            if (list.size() == 0)
+                TextField.setText("0");
+            else {
+                String text = TextField.getText();
+                text = text.substring(0, (text.length() - 1));
+                TextField.setText(text);
+            }
+        }
+    }
 
     private int parenthesesChecker(LinkedList<String> linkedList) {
         return 0;

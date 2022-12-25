@@ -787,7 +787,18 @@ public class MainPage extends javax.swing.JFrame {
 
                 i = j; // Place the index after the last bracket
 
-            } 
+            } else {
+
+                int k = i + 1;
+                number += c1;
+
+                if (!(k <= str.length() - 1 && str.charAt(k) >= '0' && str.charAt(k) <= '9')) {
+                    queue.add(number);
+                    number = "";
+                }
+            }
+
+            
         }
         return queue;
     }

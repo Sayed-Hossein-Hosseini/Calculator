@@ -798,7 +798,11 @@ public class MainPage extends javax.swing.JFrame {
                 }
             }
 
-            
+            if (str.length() - 1 == i) { // Add the remaining operators on the stack to the queue
+
+                while (!stack.isEmpty())
+                    queue.add(String.valueOf(stack.pop()));
+            }
         }
         return queue;
     }

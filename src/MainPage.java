@@ -767,6 +767,26 @@ public class MainPage extends javax.swing.JFrame {
                 stack.push(c1);
                 c2 = c1;
 
+            } else if (c1.equals("(")) { // bracket ( )
+
+                int j = str.length() - 1, place;
+
+                while (j >= 0) {
+                    if (str.charAt(j) == ')') { // Find the last bracket to match the first bracket
+                        place = j;
+                        break;
+                    }
+
+                    j--;
+                }
+                queueBracket = postfix(str.substring(i + 1, j)); // Calculate inside brackets
+
+                while (!queueBracket.isEmpty()) {
+                    queue.add(queueBracket.remove());
+                }
+
+                i = j; // Place the index after the last bracket
+
             } 
         }
         return queue;

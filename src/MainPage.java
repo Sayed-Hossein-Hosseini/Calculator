@@ -733,6 +733,23 @@ public class MainPage extends javax.swing.JFrame {
                 stack.push(c1);
                 c2 = c1;
 
+            } else if (c1.equals("*") || c1.equals("/")) { // operator * or /
+
+                while (!c2.equals("(") && !c2.equals("") && !c2.equals("+") && !c2.equals("-")) { // Checking the precedence of the operator inside the stack with the input operator
+
+                    queue.add(String.valueOf(stack.pop())); // Add a high-priority operator to the queue
+
+                    if (!stack.isEmpty()) {
+                        c2 = stack.pop();
+                        stack.push(c2);
+                    } else {
+                        break;
+                    }
+                }
+
+                stack.push(c1);
+                c2 = c1;
+
             } 
         }
         return queue;

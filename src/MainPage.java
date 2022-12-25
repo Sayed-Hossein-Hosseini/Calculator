@@ -704,6 +704,22 @@ public class MainPage extends javax.swing.JFrame {
         return 0;
     }
 
+    public static Queue<String> postfix(String str) { // Convert infix to postfix
+
+        Stack<String> stack = new Stack<>(); // A stack to place operators inside
+        Queue<String> queue = new LinkedList<>(); // Auxiliary queue if bracketed
+        Queue<String> queueBracket = new LinkedList<>(); // Queue to place operators and operands in postfix
+
+        String c1 = "", c2 = "", number = ""; // c1 character to get data from the input & c2 character to get data from the stack
+
+        for (int i = 0; i < str.length(); i++) {
+
+            c1 = String.valueOf(str.charAt(i));
+            
+        }
+        return queue;
+    }
+
     // Variables declaration - do not modify
     private javax.swing.JLabel TextField;
     private javax.swing.JButton jButton1;

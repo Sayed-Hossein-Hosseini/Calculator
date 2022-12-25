@@ -807,6 +807,88 @@ public class MainPage extends javax.swing.JFrame {
         return queue;
     }
 
+    public static long operationRPN(Queue<String> queue) { // Calculation of mathematical operations by RPN method
+
+        long total = 0, number1 = 0, number2 = 0, counter = queue.size();
+
+        Stack<Long> recive = new Stack<>();
+        Scanner scanner;
+
+        for (int i = 0; i < counter; i++) {
+
+            String data = queue.remove();
+
+            switch (data) {
+
+                case "+": // operator +
+
+                    number1 = recive.pop();
+                    number2 = recive.pop();
+
+                    total = number2 + number1;
+
+                    recive.push(total);
+
+                    break;
+
+                case "-": // operator -
+
+                    number1 = recive.pop();
+                    number2 = recive.pop();
+
+                    total = number2 - number1;
+
+                    recive.push(total);
+
+                    break;
+
+                case "*": // operator *
+
+                    number1 = recive.pop();
+                    number2 = recive.pop();
+
+                    total = number2 * number1;
+
+                    recive.push(total);
+
+                    break;
+
+                case "/": // operator /
+
+                    number1 = recive.pop();
+                    number2 = recive.pop();
+
+                    total = number2 / number1;
+
+                    recive.push(total);
+
+                    break;
+
+                case "^": // operator ^
+
+                    number1 = recive.pop();
+                    number2 = recive.pop();
+
+                    total = (long) Math.pow(number2, number1);
+
+                    recive.push(total);
+
+                    break;
+
+                default: // push number
+
+                    scanner = new Scanner(data);
+
+                    long num = scanner.nextInt();
+
+                    recive.push(num);
+
+                    break;
+            }
+        }
+        return recive.pop(); // pop result and return
+    }
+
     // Variables declaration - do not modify
     private javax.swing.JLabel TextField;
     private javax.swing.JButton jButton1;

@@ -560,7 +560,26 @@ public class MainPage extends javax.swing.JFrame {
 
     }
 
-    private void key_equalMouseClicked(java.awt.event.MouseEvent evt) {}
+    private void key_equalMouseClicked(java.awt.event.MouseEvent evt) {
+
+        int x = parenthesesChecker(list);
+        if (x > 0){
+            for (int i = 0; i < x; i++) {
+                TextField.setText(TextField.getText() + ")");
+                list.add(")");
+            }
+        }
+
+        long answer = operationRPN(postfix(TextField.getText()));
+        TextField.setText(Long.toString(answer));
+
+        while (!list.isEmpty())
+            list.remove();
+
+        list.add(Long.toString(answer));
+        isFirst = false;
+
+    }
 
     private void key_sumMouseClicked(java.awt.event.MouseEvent evt) {
 

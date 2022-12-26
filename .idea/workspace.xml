@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f1b3e82-b100-41fe-b8ce-ba7115ba7a38" name="Changes" comment="Completing the methods related to clicking on keys 7 to 9 of the calculator" />
+    <list default="true" id="4f1b3e82-b100-41fe-b8ce-ba7115ba7a38" name="Changes" comment="Adding parenthesesChecker method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671878210004</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding parenthesesChecker method">
+      <created>1672063579838</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672063579838</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +145,7 @@
     <MESSAGE value="Completing the methods related to clicking on keys 0 to 2 of the calculator" />
     <MESSAGE value="Completing the methods related to clicking on keys 3 to 6 of the calculator" />
     <MESSAGE value="Completing the methods related to clicking on keys 7 to 9 of the calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completing the methods related to clicking on keys 7 to 9 of the calculator" />
+    <MESSAGE value="Adding parenthesesChecker method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding parenthesesChecker method" />
   </component>
 </project>

@@ -700,8 +700,17 @@ public class MainPage extends javax.swing.JFrame {
         }
     }
 
-    private int parenthesesChecker(LinkedList<String> linkedList) {
-        return 0;
+    private int parenthesesChecker(LinkedList<String> linkedList){
+        int x = 0;
+        if (!linkedList.isEmpty()) {
+            for (int i = 0; i < linkedList.size(); i++) {
+                if (linkedList.get(i) == "(")
+                    x++;
+                else if (linkedList.get(i) == ")")
+                    x--;
+            }
+        }
+        return x;
     }
 
     public static Queue<String> postfix(String str) { // Convert infix to postfix

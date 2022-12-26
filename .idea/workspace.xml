@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f1b3e82-b100-41fe-b8ce-ba7115ba7a38" name="Changes" comment="Completing the methods related to clicking on keys 7 to 9 of the calculator">
-      <change beforePath="$PROJECT_DIR$/src/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.java" afterDir="false" />
-    </list>
+    <list default="true" id="4f1b3e82-b100-41fe-b8ce-ba7115ba7a38" name="Changes" comment="Completing the methods related to clicking on keys 7 to 9 of the calculator" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/shoss/Desktop/project-2-calculator-nothing",
+    "last_opened_file_path": "C:/Users/padidar/Desktop/project-2-calculator-nothing",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

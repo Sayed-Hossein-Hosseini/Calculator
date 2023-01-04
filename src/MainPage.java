@@ -4,7 +4,7 @@ import java.util.*;
 public class MainPage extends javax.swing.JFrame {
 
     private LinkedList<String> list = new LinkedList<>();
-    boolean isFirst= true;
+    boolean isFirst = true;
 
     public MainPage() {
         initComponents();
@@ -334,13 +334,14 @@ public class MainPage extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }
+
     private void key_0MouseClicked(java.awt.event.MouseEvent evt) {
 
-        if (list.size() == 1 && isFirst == false){
+        if (list.size() == 1 && isFirst == false) {
             list.remove();
             TextField.setText("0");
             isFirst = true;
-        }else {
+        } else {
             if (TextField.getText() == "0") {
                 TextField.setText("0");
             } else if (list.getLast() == "/" || list.getLast() == ")") {
@@ -354,12 +355,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_1MouseClicked(java.awt.event.MouseEvent evt) {
 
-        if (list.size() == 1 && isFirst == false){
+        if (list.size() == 1 && isFirst == false) {
             list.remove();
             TextField.setText("1");
             list.add("1");
             isFirst = true;
-        }else {
+        } else {
             if (TextField.getText() == "0") {
                 TextField.setText("1");
 
@@ -376,12 +377,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_2MouseClicked(java.awt.event.MouseEvent evt) {
 
-        if (list.size() == 1 && isFirst == false){
+        if (list.size() == 1 && isFirst == false) {
             list.remove();
             TextField.setText("2");
             list.add("2");
             isFirst = true;
-        }else {
+        } else {
             if (TextField.getText() == "0") {
                 TextField.setText("2");
 
@@ -398,12 +399,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_3MouseClicked(java.awt.event.MouseEvent evt) {
 
-        if (list.size() == 1 && isFirst == false){
+        if (list.size() == 1 && isFirst == false) {
             list.remove();
             TextField.setText("3");
             list.add("3");
             isFirst = true;
-        }else {
+        } else {
             if (TextField.getText() == "0") {
                 TextField.setText("3");
 
@@ -420,12 +421,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_4MouseClicked(java.awt.event.MouseEvent evt) {
 
-        if (list.size() == 1 && isFirst == false){
+        if (list.size() == 1 && isFirst == false) {
             list.remove();
             TextField.setText("4");
             list.add("4");
             isFirst = true;
-        }else {
+        } else {
             if (TextField.getText() == "0") {
                 TextField.setText("4");
 
@@ -442,12 +443,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_5MouseClicked(java.awt.event.MouseEvent evt) {
 
-        if (list.size() == 1 && isFirst == false){
+        if (list.size() == 1 && isFirst == false) {
             list.remove();
             TextField.setText("5");
             list.add("5");
             isFirst = true;
-        }else {
+        } else {
             if (TextField.getText() == "0") {
                 TextField.setText("5");
 
@@ -464,12 +465,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_6MouseClicked(java.awt.event.MouseEvent evt) {
 
-        if (list.size() == 1 && isFirst == false){
+        if (list.size() == 1 && isFirst == false) {
             list.remove();
             TextField.setText("6");
             list.add("6");
             isFirst = true;
-        }else {
+        } else {
             if (TextField.getText() == "0") {
                 TextField.setText("6");
 
@@ -486,12 +487,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_7MouseClicked(java.awt.event.MouseEvent evt) {
 
-        if (list.size() == 1 && isFirst == false){
+        if (list.size() == 1 && isFirst == false) {
             list.remove();
             TextField.setText("7");
             list.add("7");
             isFirst = true;
-        }else {
+        } else {
             if (TextField.getText() == "0") {
                 TextField.setText("7");
 
@@ -508,12 +509,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_8MouseClicked(java.awt.event.MouseEvent evt) {
 
-        if (list.size() == 1 && isFirst == false){
+        if (list.size() == 1 && isFirst == false) {
             list.remove();
             TextField.setText("8");
             list.add("8");
             isFirst = true;
-        }else {
+        } else {
             if (TextField.getText() == "0") {
                 TextField.setText("8");
 
@@ -530,12 +531,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_9MouseClicked(java.awt.event.MouseEvent evt) {
 
-        if (list.size() == 1 && isFirst == false){
+        if (list.size() == 1 && isFirst == false) {
             list.remove();
             TextField.setText("9");
             list.add("9");
             isFirst = true;
-        }else {
+        } else {
             if (TextField.getText() == "0") {
                 TextField.setText("9");
 
@@ -562,22 +563,40 @@ public class MainPage extends javax.swing.JFrame {
 
     private void key_equalMouseClicked(java.awt.event.MouseEvent evt) {
 
-        int x = parenthesesChecker(list);
-        if (x > 0){
-            for (int i = 0; i < x; i++) {
-                TextField.setText(TextField.getText() + ")");
-                list.add(")");
+        if (TextField.getText().charAt(TextField.getText().length() - 1) == '-' || TextField.getText().charAt(TextField.getText().length() - 1) == '+' ||
+                TextField.getText().charAt(TextField.getText().length() - 1) == '*' || TextField.getText().charAt(TextField.getText().length() - 1) == '/' ||
+                TextField.getText().charAt(TextField.getText().length() - 1) == '^' || TextField.getText().charAt(TextField.getText().length() - 1) == '(') {
+            TextField.setText("Invalid format used!");
+        }else {
+            int x = parenthesesChecker(list);
+            if (x > 0) {
+                for (int i = 0; i < x; i++) {
+                    TextField.setText(TextField.getText() + ")");
+                    list.add(")");
+                }
             }
+
+            String answer1 = list.toString();
+            answer1 = answer1.substring(1 , answer1.length() - 1).replaceAll(", " , "") ;
+
+            long answer = operationRPN(postfix(answer1));
+
+            TextField.setText(Long.toString(answer));
+
+            while (!list.isEmpty())
+                list.remove();
+
+            String num = Long.toString(answer) ;
+
+            if (num.charAt(0) == '-'){
+                list.add("0");
+                list.add("-");
+                list.add(num.substring(1)) ;
+            }else {
+                list.add(num);
+            }
+            isFirst = false;
         }
-
-        long answer = operationRPN(postfix(TextField.getText()));
-        TextField.setText(Long.toString(answer));
-
-        while (!list.isEmpty())
-            list.remove();
-
-        list.add(Long.toString(answer));
-        isFirst = false;
 
     }
 
@@ -587,7 +606,7 @@ public class MainPage extends javax.swing.JFrame {
             TextField.setText("Invalid format used!");
 
         } else if (list.getLast() == "+" || list.getLast() == "*" ||
-                list.getLast() == "/" || list.getLast() == "(" ||
+                list.getLast() == "/" ||
                 list.getLast() == "-" || list.getLast() == "^") {
             list.removeLast();
             String text = TextField.getText();
@@ -595,6 +614,10 @@ public class MainPage extends javax.swing.JFrame {
             TextField.setText(text + "+");
             list.add("+");
 
+        }  else if (list.getLast() == "("){
+            list.add("0");
+            list.add("+");
+            TextField.setText(TextField.getText() + "+");
         } else {
             list.add("+");
             TextField.setText(TextField.getText() + "+");
@@ -606,7 +629,7 @@ public class MainPage extends javax.swing.JFrame {
         if (TextField.getText() == "0") {
             TextField.setText("Invalid format used!");
         } else if (list.getLast() == "+" || list.getLast() == "*" ||
-                list.getLast() == "/" || list.getLast() == "(" ||
+                list.getLast() == "/" ||
                 list.getLast() == "-" || list.getLast() == "^") {
             list.removeLast();
             String text = TextField.getText();
@@ -614,7 +637,11 @@ public class MainPage extends javax.swing.JFrame {
             TextField.setText(text + "-");
             list.add("-");
 
-        } else {
+        } else if (list.getLast() == "("){
+            list.add("0");
+            list.add("-");
+            TextField.setText(TextField.getText() + "-");
+        }  else {
             list.add("-");
             TextField.setText(TextField.getText() + "-");
         }
@@ -650,7 +677,7 @@ public class MainPage extends javax.swing.JFrame {
         if (TextField.getText() == "0") {
             TextField.setText("Invalid format used!");
         } else if (list.getLast() == "+" || list.getLast() == "*" ||
-                list.getLast() == "/" || list.getLast() == "(" ||
+                list.getLast() == "/" ||
                 list.getLast() == "-" || list.getLast() == "^") {
             list.removeLast();
             String text = TextField.getText();
@@ -658,7 +685,9 @@ public class MainPage extends javax.swing.JFrame {
             TextField.setText(text + "^");
             list.add("^");
 
-        } else {
+        } else if (list.getLast() == "("){
+            TextField.setText("Invalid format used!");
+        }else {
             list.add("^");
             TextField.setText(TextField.getText() + "^");
         }
@@ -669,7 +698,7 @@ public class MainPage extends javax.swing.JFrame {
         if (TextField.getText() == "0") {
             TextField.setText("Invalid format used!");
         } else if (list.getLast() == "+" || list.getLast() == "*" ||
-                list.getLast() == "/" || list.getLast() == "(" ||
+                list.getLast() == "/" ||
                 list.getLast() == "-" || list.getLast() == "^") {
             list.removeLast();
             String text = TextField.getText();
@@ -677,7 +706,9 @@ public class MainPage extends javax.swing.JFrame {
             TextField.setText(text + "*");
             list.add("*");
 
-        } else {
+        }  else if (list.getLast() == "("){
+            TextField.setText("Invalid format used!");
+        }else {
             list.add("*");
             TextField.setText(TextField.getText() + "*");
         }
@@ -689,7 +720,7 @@ public class MainPage extends javax.swing.JFrame {
             TextField.setText("Invalid format used!");
 
         } else if (list.getLast() == "+" || list.getLast() == "*" ||
-                list.getLast() == "/" || list.getLast() == "(" ||
+                list.getLast() == "/" ||
                 list.getLast() == "-" || list.getLast() == "^") {
             list.removeLast();
             String text = TextField.getText();
@@ -697,7 +728,9 @@ public class MainPage extends javax.swing.JFrame {
             TextField.setText(text + "/");
             list.add("/");
 
-        } else {
+        }  else if (list.getLast() == "("){
+            TextField.setText("Invalid format used!");
+        }else {
             list.add("/");
             TextField.setText(TextField.getText() + "/");
         }
@@ -719,7 +752,7 @@ public class MainPage extends javax.swing.JFrame {
         }
     }
 
-    private int parenthesesChecker(LinkedList<String> linkedList){
+    private int parenthesesChecker(LinkedList<String> linkedList) {
         int x = 0;
         if (!linkedList.isEmpty()) {
             for (int i = 0; i < linkedList.size(); i++) {

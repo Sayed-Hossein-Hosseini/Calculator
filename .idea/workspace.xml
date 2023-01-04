@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f1b3e82-b100-41fe-b8ce-ba7115ba7a38" name="Changes" comment="Adding parenthesesChecker method" />
+    <list default="true" id="4f1b3e82-b100-41fe-b8ce-ba7115ba7a38" name="Changes" comment="Adding parenthesesChecker method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/padidar/Desktop/project-2-calculator-nothing",
+    "last_opened_file_path": "D:/University/Term 3/Data Structure/Project/2/project-2-calculator-nothing",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,6 +82,7 @@
       <workItem from="1671821315028" duration="697000" />
       <workItem from="1671822106368" duration="647000" />
       <workItem from="1671999870679" duration="1040000" />
+      <workItem from="1672823705382" duration="4527000" />
     </task>
     <task id="LOCAL-00001" summary="The basic design of the calculator and adding methods related to mouse clicks on each of the keys">
       <created>1671827998614</created>

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f1b3e82-b100-41fe-b8ce-ba7115ba7a38" name="Changes" comment="Adding parenthesesChecker method">
+    <list default="true" id="4f1b3e82-b100-41fe-b8ce-ba7115ba7a38" name="Changes" comment="Edit Project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +35,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/University/Term 3/Data Structure/Project/2/project-2-calculator-nothing",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shoss/Documents/Idea/SuperMario&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -82,7 +81,11 @@
       <workItem from="1671821315028" duration="697000" />
       <workItem from="1671822106368" duration="647000" />
       <workItem from="1671999870679" duration="1040000" />
-      <workItem from="1672823705382" duration="4527000" />
+      <workItem from="1672823705382" duration="6147000" />
+      <workItem from="1673087088881" duration="288000" />
+      <workItem from="1673087541710" duration="173000" />
+      <workItem from="1673184644860" duration="306000" />
+      <workItem from="1738764165310" duration="181000" />
     </task>
     <task id="LOCAL-00001" summary="The basic design of the calculator and adding methods related to mouse clicks on each of the keys">
       <created>1671827998614</created>
@@ -126,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672063579838</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Edit Project">
+      <created>1672828353964</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672828353964</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +160,7 @@
     <MESSAGE value="Completing the methods related to clicking on keys 3 to 6 of the calculator" />
     <MESSAGE value="Completing the methods related to clicking on keys 7 to 9 of the calculator" />
     <MESSAGE value="Adding parenthesesChecker method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding parenthesesChecker method" />
+    <MESSAGE value="Edit Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit Project" />
   </component>
 </project>

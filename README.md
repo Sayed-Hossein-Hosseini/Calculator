@@ -10,7 +10,7 @@ This project is a simple calculator developed using the Java programming languag
 
 ## User Interface
 
-![Calculator Interface](https://via.placeholder.com/300)
+![Calculator Interface]([https://via.placeholder.com/300](https://github.com/Sayed-Hossein-Hosseini/Calculator/blob/master/User%20Interface.png))
 
 ## How to Run
 
